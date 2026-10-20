@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        Course courseOne = new Course("Objektorienterad-Programmering", "Hampus", 25);
+
         
         Scanner scanner = new Scanner(System.in);
         System.out.println("StudyManager Version 0.02");
@@ -18,13 +21,14 @@ public class Main {
                     end = 1;
                     break;
                 case 1:
-                    System.out.println("Visa kurser kommer snart...");
+                    courseOne.printInfo();
                     System.out.println("1. Gå tillbaka till börja 0. Avsluta");
                     int choiceOne = scanner.nextInt();
                     switch (choiceOne) {
                         case 0:
                             System.out.println("Programmet Avslutas");
                             end = 1;
+                            break;
                         case 1:
                             
                             break;
@@ -42,6 +46,7 @@ public class Main {
                         case 0:
                             System.out.println("Programmet Avslutas");
                             end = 1;
+                            break;
                         case 1:
                             
                             break;
